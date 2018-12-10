@@ -1,0 +1,19 @@
+{
+  "name": "visitgeorgia",
+  "version": "1.0.0",
+  "description": "This is a rough draft for Portfolio project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gen1331/PortfolioProject.git"
+  },
+  "author": "Sergey & Geneva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gen1331/PortfolioProject/issues"
+  },
+  "homepage": "https://github.com/Gen1331/PortfolioProject#readme"
+}
