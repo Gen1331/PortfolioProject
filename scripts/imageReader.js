@@ -1,4 +1,8 @@
 
+    
+
+
+
 var img = new Image();
 var arr = ["Alaverdi","stGeorgeStabbingDragon","gergeti-church", "Diri-Baba-Mausoleum-Maraza"];
 

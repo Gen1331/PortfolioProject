@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,21 +8,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">    
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
+    <link rel="stylesheet" type="text/css" href="styles/mystyles.css">
+    
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    
     
 </head>
-<body>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+    
     <header>
-
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                </button>
+                <a class="navbar-brand" href="#">Logo</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#band">BAND</a></li>
+                    <li><a href="#tour">TOUR</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li> 
+                    </ul>
+                    </li>
+                    <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
-        
-        <!-- <div id="imgRead" class="w3-content w3-display-container">
-            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>               
-          
-        </div>  -->
-
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol id="indicator" class="carousel-indicators">               
             </ol>
@@ -35,17 +65,60 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
-        </div>       
-
-    </main>
+        </div><br><hr>
+        <div class="row">
+            <div class="col-sm-4">
+                <p class="text-center"><strong>Name</strong></p><br>
+                <a class="collapsible" href="#demo" data-toggle="collapse">
+                    <img src="images/freedomSquare.jpg" class="img-circle img" alt="Random Name">
+                </a> 
+                <div id="demo" class="collapse">
+                    <p>Freedom Square</p>
+                    <p>Freedom Square</p>
+                    <p>Freedom Square</p>
+                </div>                   
+            </div>
+            <div class="col-sm-4">
+                <p class="text-center"><strong>Name</strong></p><br>
+                <a class="collapsible" href="#demo1" data-toggle="collapse">
+                    <img src="images/freedomSquare.jpg" class="img-circle img" alt="Random Name">
+                </a> 
+                <div id="demo1" class="collapse">
+                    <p>Freedom Square</p>
+                    <p>Freedom Square</p>
+                    <p>Freedom Square</p>
+                </div> 
+            </div>
+            <div class="col-sm-4">
+                <p class="text-center"><strong>Name</strong></p><br>
+                <a class="collapsible" href="#demo2" data-toggle="collapse">
+                    <img src="images/gergeti-church.jpg" class="img-circle img" alt="Random Name">
+                </a> 
+                <div id="demo2" class="collapse">
+                    <p>Gergeti Church</p>
+                    <p>Gergeti Church</p>
+                    <p>Gergeti Church</p>
+                </div> 
+            </div>
+        </div>
+    </main><br><hr>
     <footer>
-
+        <div>
+            <a href="https://twitter.com/JayCoinMinerDev" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://github.com/JayCoinMinerDev" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jay-michalek-126baa164/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.freecodecamp.org/portfolio/fccb9bbf2de-33e6-4534-baa6-a7854ac0d14a" target="_blank"><i class="fab fa fa-free-code-camp"></i></a>
+        </div>
+            <p class="copyright">&copy; 2018 Geneva Wright & Sergey Popach Portfolio</p>
     </footer>
+    
+    
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/imageReader.js"></script>
+    <script src="scripts/collapsible.js"></script>
     
 </body>
 </html>
