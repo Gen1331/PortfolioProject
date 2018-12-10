@@ -1,21 +1,35 @@
+.hero-image {
+    background-image: url("/images/background.jpg");
+    /* background-color: #cccccc; */
+    height: 2500px;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+.hero-text {
+    text-align: center;    
+    top: 50%;
+    left: 50%;    
+    color: white;
+    
+   
+}
+
 .container {
     padding: 0px 0px;
     margin: 0px 0px;    
 }
 
 .img {
-    /* border: 10px solid transparent;
-    margin-bottom: 25px;
-    width: 80%;
-    height: 80%;
-    opacity: 0.7; */
     background-color: #777;
     color: white;
     cursor: pointer;
     padding: 5px;
     width: 100%;         
     margin-bottom: 25px;
-    border: none;    
+    border: 1px solid;    
     text-align: center;
     outline: none;
     font-size: 15px;
@@ -71,4 +85,8 @@
 /* On hover, the dropdown links will turn red */
 .dropdown-menu li a:hover {
     background-color: red !important;
+}
+
+#footer{
+    top: 1500px;
 }
