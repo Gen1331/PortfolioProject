@@ -10,6 +10,10 @@
     position: absolute;
 }
 
+.navbar-inner {
+    background:transparent;
+}
+
 .hero-text {
     text-align: center;    
     top: 50%;
