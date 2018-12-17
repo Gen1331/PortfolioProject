@@ -2,12 +2,24 @@
     background-image: url("/images/background.jpg");
     /* background-color: #cccccc; */
     height: 2500px;
+<<<<<<< HEAD
+=======
+    /* opacity: 0.5; */
+    /* filter: alpha(opacity=50); */
+>>>>>>> a7c0552afc2ec02e99dbe83534c4b9561fbe399f
     /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
 }
 
+<<<<<<< HEAD
+=======
+.navbar-inner {
+    background:transparent;
+}
+
+>>>>>>> a7c0552afc2ec02e99dbe83534c4b9561fbe399f
 .hero-text {
     text-align: center;    
     top: 50%;
@@ -16,6 +28,26 @@
     
    
 }
+<<<<<<< HEAD
+=======
+body{
+    width:100%;
+
+}
+
+.slider{
+    width: 100%;
+    height: 450px;
+}
+
+.carousel{
+    width:100%;
+}
+
+/* *{
+    border: 1px solid;
+} */
+>>>>>>> a7c0552afc2ec02e99dbe83534c4b9561fbe399f
 
 .container {
     padding: 0px 0px;
