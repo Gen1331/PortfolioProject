@@ -1,50 +1,63 @@
-.hero-image {
+/* .hero-image {
     background-image: url("/images/background.jpg");
     /* background-color: #cccccc; */
-    height: 2500px;
+    /* height: 2500px; */
     /* opacity: 0.5; */
     /* filter: alpha(opacity=50); */
     /* background-position: center; */
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
+} */
+
+/* 
+@keyframes shake{
+    0%{transform:translate(1px,1px) rotate(0deg);}
+    10%{transform:translate(-1px,-2px) rotate(-1deg);}
+    20%{transform:translate(-3px,0px) rotate(1deg);}
+    30%{transform:translate(3px,2px) rotate(0deg);}
+    40%{transform:translate(1px,-1px) rotate(1deg);}
+    50%{transform:translate(-1px,1px) rotate(-1deg);}
+    60%{transform:translate(-3px,1px) rotate(0deg);}
+    70%{transform:translate(3px,1px) rotate(-1deg);}
+    80%{transform:translate(-1px,-1px) rotate(1deg);}
+    90%{transform:translate(1px,2px) rotate(0deg);}
+    100%{transform:translate(1px,-2px) rotate(-1deg);}
 }
 
-.navbar-inner {
-    background:transparent;
+.img:hover{
+    animation: shake 0.8s infinite;
 }
 
 .hero-text {
-    text-align: center;    
-    top: 50%;
-    left: 50%;    
-    color: white;
-    
+    text-align: center; 
+    color: rgb(168, 35, 35);
+    width:100%;
+    background-color: yellowgreen;
    
 }
-body{
+/* body{
     width:100%;
+    padding-top: 70px;
+} */
 
-}
-
-.slider{
+/* .slider{
     width: 100%;
     height: 450px;
 }
 
 .carousel{
-    width:100%;
-}
+     */
 
 /* *{
     border: 1px solid;
 } */
 
-.container {
+/* .container {
     padding: 0px 0px;
     margin: 0px 0px;    
-}
-
+} */
+/* 
 .img {
     background-color: #777;
     color: white;
@@ -59,57 +72,7 @@ body{
 }
 .img:hover {
     background-color: #f01d1d;
-}
+} */
 
 
 
-/* Add a dark background color with a little bit see-through */ 
-.navbar {
-    margin-bottom: 0;
-    background-color: #2d2d30;
-    border: 0;
-    font-size: 11px !important;
-    letter-spacing: 4px;
-    opacity: 0.9;
-}
-
-/* Add a gray color to all navbar links */
-.navbar li a, .navbar .navbar-brand { 
-    color: #d5d5d5 !important;
-}
-
-/* On hover, the links will turn white */
-.navbar-nav li a:hover {
-    color: #fff !important;
-}
-
-/* The active link */
-.navbar-nav li.active a {
-    color: #fff !important;
-    background-color:#29292c !important;
-}
-
-/* Remove border color from the collapsible button */
-.navbar-default .navbar-toggle {
-    border-color: transparent;
-}
-
-/* Dropdown */
-.open .dropdown-toggle {
-    color: #fff ;
-    background-color: #555 !important;
-}
-
-/* Dropdown links */
-.dropdown-menu li a {
-    color: #000 !important;
-}
-
-/* On hover, the dropdown links will turn red */
-.dropdown-menu li a:hover {
-    background-color: red !important;
-}
-
-#footer{
-    top: 1500px;
-}
