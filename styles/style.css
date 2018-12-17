@@ -2,7 +2,7 @@ body {
     width:100%;
     padding-top: 0px;
     margin: 0;    
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 a.col-5.navbar-brand {
@@ -40,19 +40,38 @@ ul li {
     padding: 20px;
 }
 ul li:hover{
-    background: rgba(255, 81, 0, 0.37);  
+    background: rgba(255, 81, 0, 0.37);
+   
     text-decoration: none;  
     animation: shake 0.8s infinite;
 }
 ul li a{
     color: rgb(173, 35, 10);
-    font-size: 35px;    
+    font-size: 45px; 
+    font-weight: bold;   
 
 }
 
 ul li a:hover {
     text-decoration: none;
+    color: white;
 }
+
+span.carousel-control-prev-icon, 
+span.carousel-control-next-icon{
+    height: 15%;
+    top: 33%;
+    width: 75px;
+    
+}
+
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+    float: left;
+    width: 8%;
+    height: 25px; 
+}
+
 
 .toggle{
     background: transparent;
@@ -93,9 +112,6 @@ ul li a:hover {
         display: none;
     }
 }
-
-
-
 
 @keyframes shake{
     0%{transform:translate(1px,1px) rotate(0deg);}
