@@ -15,12 +15,17 @@ for(var i=0; i<arr.length; i++){
     var div = document.getElementById('imgRead');
     var ind = document.getElementById('indicator');   
 <<<<<<< HEAD
+<<<<<<< HEAD
     i===0 ? div.innerHTML += '<div class="carousel-item active"><img style="width:100%" class="d-block w-100" src="' + img.src + '" alt="First slide"></div>' : 
     div.innerHTML += '<div class="carousel-item"><img style="width:100%" class="d-block w-100" src="' + img.src + '" alt="First slide"></div>'; 
 =======
     i===0 ? div.innerHTML += '<div class="carousel-item active"><img style="width:100%" class="d-block w-100" src="' + img.src + '" alt="First slide">' + caption + '</div>' : 
     div.innerHTML += '<div class="carousel-item"><img style="width:100%" class="d-block w-100" src="' + img.src + '" alt="First slide">' + caption + '</div>'; 
 >>>>>>> a7c0552afc2ec02e99dbe83534c4b9561fbe399f
+=======
+    i===0 ? div.innerHTML += '<div class="carousel-item carousel item active"><img style="width:100%" class="d-block w-100" src="' + img.src + '" alt="First slide">' + caption + '</div>' : 
+    div.innerHTML += '<div class="carousel-item carousel item"><img style="width:100%" class="d-block w-100" src="' + img.src + '" alt="First slide">' + caption + '</div>'; 
+>>>>>>> 6bb9d6f0654c39b7b7c8e9664b795787b382c99e
     i===0 ? ind.innerHTML += '<li data-target="#carouselExampleIndicators" data-slide-to="' + i + '" class="active"></li>': 
     ind.innerHTML += '<li data-target="#carouselExampleIndicators" data-slide-to="' + i +'"></li>'; 
    
