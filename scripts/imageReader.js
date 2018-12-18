@@ -4,7 +4,7 @@ var caption = '<div class="carousel-caption d-none d-md-block" style="vertical-a
 
 
 var img = new Image();
-var arr = ["Alaverdi","stGeorgeStabbingDragon","gergeti-church", "Diri-Baba-Mausoleum-Maraza"];
+var arr = ["Alaverdi","stGeorgeStabbingDragon","gergeti-church", "Diri-Baba-Mausoleum-Maraza", "Kazbegi"];
 
 for(var i=0; i<arr.length; i++){                                   
     img.src = "images/" + arr[i] + ".jpg";    
