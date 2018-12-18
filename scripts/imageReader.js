@@ -1,4 +1,3 @@
-
     
 var caption = '<div class="carousel-caption d-none d-md-block" style="vertical-align: baseline;"><h5 style="text-align: center;">Visit Georgia</h5>';
 
