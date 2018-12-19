@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">    
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/mystyles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
@@ -38,7 +39,7 @@
                     </div>
 
                     <div class="col">
-                        <ul>
+                        <ul class="nav-ul">
                             <li><a href="#"> Home</a></li>
                             <li><a href="/activities.html"> Activities</a></li>
                             <li><a href="/tours.html"> Tours</a></li>
@@ -76,24 +77,28 @@
                     </a>
                 </div><br>
             </div>
+
+            <div class="wrap">  
+                <ul class="tabs group">
+                    <li><a class="active" href="#/one">About Georgia</a></li>
+                    <li><a href="#/two">Culture</a></li>
+                    <li><a href="#/three">History</a></li>
+                </ul>            
+                <div id="content">
+                    <p id="one">A land of endless wonders, unspoilt by modern tourism and still retaining its authentic character – Georgia. Once experienced, it will stay with you forever. Exploring Georgia is a constant pleasure. For walkers and hikers the country is sheer heaven, while botanists and bird-watchers will be simply enthralled and archaeologists can’t decide which of the numerous ancient findings to visit first.
+
+                            With the towering Caucasus Mountains forming the border between Europe and Asia, Georgia has long been an important contact zone. In this mystical land you will be captivated by a thrilling blend of eastern enigma and western elegance. The traditions of the East and West meet in Georgia to form a culture unlike any other in the world. </p>
+                    <p id="two">A land of endless wonders, unspoilt by modern tourism and still retaining its authentic character – Georgia. Once experienced, it will stay with you forever. Exploring Georgia is a constant pleasure. For walkers and hikers the country is sheer heaven, while botanists and bird-watchers will be simply enthralled and archaeologists can’t decide which of the numerous ancient findings to visit first.
+
+                            With the towering Caucasus Mountains forming the border between Europe and Asia, Georgia has long been an important contact zone. In this mystical land you will be captivated by a thrilling blend of eastern enigma and western elegance. The traditions of the East and West meet in Georgia to form a culture unlike any other in the world.</p>
+                    <p id="three">A land of endless wonders, unspoilt by modern tourism and still retaining its authentic character – Georgia. Once experienced, it will stay with you forever. Exploring Georgia is a constant pleasure. For walkers and hikers the country is sheer heaven, while botanists and bird-watchers will be simply enthralled and archaeologists can’t decide which of the numerous ancient findings to visit first.
+
+                            With the towering Caucasus Mountains forming the border between Europe and Asia, Georgia has long been an important contact zone. In this mystical land you will be captivated by a thrilling blend of eastern enigma and western elegance. The traditions of the East and West meet in Georgia to form a culture unlike any other in the world.q</p>
+                </div>
+            
+            </div>
            
-            <h1>About Georgia</h1>
-            <p>Georgia (Georgian: საქართველო, translit.: sakartvelo, IPA: [sɑkʰɑrtʰvɛlɔ] (About this soundlisten)) is a country in the Caucasus region of Eurasia. Located at the crossroads of 
-                Western Asia and Eastern Europe, it is bounded to the west by the Black Sea, to the north by Russia, to the south by Turkey and Armenia, and to the southeast by Azerbaijan. 
-                The capital and largest city is Tbilisi. Georgia covers a territory of 69,700 square kilometres (26,911 sq mi), 
-                and its 2017 population is about 3.718 million. The sovereign state of Georgia is a unitary semi-presidential republic, with the government elected through a representative democracy.[3]
-                During the classical era, several independent kingdoms became established in what is now Georgia, such as Colchis, later known as Lazica and Iberia. 
-                The Georgians adopted Christianity in the early 4th century. The common belief had an enormous importance for spiritual and political unification of early Georgian states. 
-                A unified Kingdom of Georgia reached its Golden Age during the reign of King David IV and Queen Tamar in the 12th and early 13th centuries. 
-                Thereafter, the kingdom declined and eventually disintegrated under hegemony of various regional powers, including the Mongols, the Ottoman Empire, and successive dynasties of Iran. In the late 18th century, 
-                the eastern Georgian Kingdom of Kartli-Kakheti forged an alliance with the Russian Empire, which directly annexed the kingdom in 1801 and conquered the western Kingdom of Imereti in 1810. 
-                Russian rule over Georgia was eventually acknowledged in various peace treaties with Iran and the Ottomans and the remaining Georgian territories were absorbed by the Russian Empire 
-                in a piecemeal fashion in the course of the 19th century. During the Civil War following the Russian Revolution in 1917, Georgia briefly became part of the Transcaucasian Federation and 
-                then emerged as an independent republic before the Red Army invasion in 1921 which established a government of workers' and peasants' soviets. Soviet Georgia would be incorporated into a new 
-                Transcaucasian Federation which in 1922 would be a founding republic of the Soviet Union. In 1936, the Transcaucasian Federation was dissolved and Georgia emerged as a Union Republic. During the Great Patriotic War, 
-                almost 700,000 Georgians fought in the Red Army against the German invaders. After Soviet leader Joseph Stalin, a native Georgian, died in 1953, a wave of protest spread against Nikita Khrushchev and his de-Stalinization reforms, 
-                leading to the death of nearly one hundred students in 1956. From that time on, Georgia would become marred with blatant corruption and increased alienation of the government from the people.
-            </p> 
+
             <!-- </div>
             <div class="row">
                 <div class="col-sm-4">
@@ -149,7 +154,7 @@
                 </a>
             </div><br>
         </div>
-        <!-- <div class="row">
+        <div class="row">
             <h1>About Georgia</h1>
             <p>Georgia (Georgian: საქართველო, translit.: sakartvelo, IPA: [sɑkʰɑrtʰvɛlɔ] (About this soundlisten)) is a country in the Caucasus region of Eurasia. Located at the crossroads of 
                 Western Asia and Eastern Europe, it is bounded to the west by the Black Sea, to the north by Russia, to the south by Turkey and Armenia, and to the southeast by Azerbaijan. 
@@ -239,6 +244,18 @@
     <script type="text/javascript" src="scripts/navbar.js"></script>
     <script src="scripts/imageReader.js"></script>
     <script src="scripts/collapsible.js"></script>
+    <script>
+        (function($) {
+            var tabs =  $(".tabs li a");
+            tabs.click(function() {
+                var content = this.hash.replace('/','');
+                tabs.removeClass("active");
+                $(this).addClass("active");
+            $("#content").find('p').hide();
+            $(content).fadeIn(200);
+            });
+        })(jQuery);
+    </script>
     
 </body>
 </html>
