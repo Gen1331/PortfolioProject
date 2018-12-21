@@ -10,9 +10,16 @@
     min-height: 400px;
 }
 
-.footer {background-color: rgb(181, 222, 233);
-margin: 0px auto;
-padding: 20px 0px 20px 0px;
+.footer {
+    background-color:rgb(216, 15, 15);;
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px;
+    color: white;
+    font-size: 25px;
+}
+
+.list-unstyled a {
+    color: white;
 }
 
 .jumbotron {
@@ -28,11 +35,7 @@ address {
     color: #0f0f0f;
 }
 
-body {
-    padding: 60px 0px 0px 0px;
-    z-index: 0;
-    background:  rgb(195, 200, 241);
-}
+
 
 .navbar-dark {
     background-color: #080C49;
@@ -51,17 +54,17 @@ body {
     padding: 10px;
 }
 
-.carousel {
+/* .carousel {
     background: cover; 
     padding-right: 0px;
     padding-top: 0px;  
-}
+} */
 
-.carousel-item {
+/* .carousel-item {
     height: 500px;
-}
+} */
 
-.carousel-item img {
+/* .carousel-item img {
     position: absolute;
     min-height: 500px;
-}
+} */

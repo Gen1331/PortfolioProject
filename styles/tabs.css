@@ -95,7 +95,7 @@ ul.tabs li a.active {
     border-bottom-left-radius: 8px;
 }
 
-p{
+p, a{
     font-family: 'Amatic SC', cursive;
     font-family: 'Gloria Hallelujah', cursive;
     padding: 30px 40px;
