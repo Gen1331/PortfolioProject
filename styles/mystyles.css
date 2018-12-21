@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400&subset=latin,latin-ext);
-
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Gloria+Hallelujah');
 
 .wrap {
     margin: 0 auto;
@@ -94,12 +94,14 @@ ul.tabs li a.active {
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
 }
-p{
-    font-family: 'Open Sans', sans-serif;
+
+p, a{
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Gloria Hallelujah', cursive;
     padding: 30px 40px;
     color: #ffffff;
     line-height: 26px;
-    font-size: 25px;
+    font-size: 35px;
     margin: 0;
     line-height: 2.7em;
 }
