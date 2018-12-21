@@ -8,9 +8,9 @@ $(document).ready(function(){
             $('.my-row').removeClass('align-items-center').addClass('align-items-start');  
             $('.my-col').removeClass('col-3');
             if($(window).width() < 400){
-                $('div.toggle').hide();
-                
-            }          
+                $('div.toggle').hide();                
+            }    
+               
         }else{
             $('.my-row').removeClass('align-items-start').addClass('align-items-center');
             $('.my-col').addClass('col-3');
