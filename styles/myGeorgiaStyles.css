@@ -59,6 +59,7 @@ body {
 
 .carousel-item {
     height: 500px;
+    width: 100%;
 }
 
 .carousel-item img {
