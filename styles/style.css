@@ -56,6 +56,10 @@ ul li {
     color: white;
 }
 
+#myicon, a {
+    font-size: 4.5em;
+}
+
 span.carousel-control-prev-icon, 
 span.carousel-control-next-icon{
     height: 15%;
