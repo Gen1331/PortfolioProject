@@ -32,6 +32,7 @@ body {
     padding: 60px 0px 0px 0px;
     z-index: 0;
     background:  rgb(195, 200, 241);
+    overflow-y: scroll;
 }
 
 .navbar-dark {
@@ -54,16 +55,18 @@ body {
 .carousel {
     background: cover; 
     padding-right: 0px;
-    padding-top: 0px;  
+    padding-top: 0px;
+    width: 100%;     
+    opacity: 0.75;      
 }
 
-.carousel-item {
-    height: 1000px;
+.img-fluid {
+    max-width: 100%;
+    height: auto;
 }
 
 .carousel-item img {
-    position: absolute;    
+    position: relative; 
+    width: 100%;   
 }
-.active img{
-    width:100%;
-}
+
