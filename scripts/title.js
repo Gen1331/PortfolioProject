@@ -1,8 +1,12 @@
-var title = ["Tbilisi","Batumi","Gori"];
+var title = ["Korbuleti","Tbilisi","Alaverdi","Batumi"];
 $(document).ready(function(){
-    $('#title').html("~Welcome to Georgia~");
+    $('#title').html("~Welcome to " + title[0] + "~");
     $('#mycarousel').on('slide.bs.carousel', function(){            
-        var t = $(this).find("div").find(".active").find('img').attr('id');
-        $('#title').html("~Welcome to " + title[t-1] + "~");
+        var id = $(this).find("div").find(".active").find('img').attr('id');        
+        if(id == title.length){
+            $('#title').html("~Welcome to " + title[0] + "~");           
+        }else{
+            $('#title').html("~Welcome to " + title[id] + "~");            
+        }
     });        
 });

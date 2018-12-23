@@ -58,10 +58,12 @@ body {
 }
 
 .carousel-item {
-    height: 500px;
+    height: 1000px;
 }
 
 .carousel-item img {
-    position: absolute;
-    min-height: 500px;
+    position: absolute;    
+}
+.active img{
+    width:100%;
 }
