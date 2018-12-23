@@ -54,16 +54,19 @@ body {
 .carousel {
     background: cover; 
     padding-right: 0px;
-    padding-top: 0px;  
+    padding-top: 0px;
+    width: 100%;     
+    opacity: 0.75;      
 }
 
-.carousel-item {
-    height: 1000px;
-}
+/* .carousel,
+.carousel-inner {
+  height: 100px;
+} */
 
 .carousel-item img {
     position: absolute;    
 }
 .active img{
-    width:100%;
+    width:100%;       
 }
