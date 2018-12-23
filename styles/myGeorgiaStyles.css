@@ -54,17 +54,17 @@ address {
     padding: 10px;
 }
 
-/* .carousel {
+.carousel {
     background: cover; 
     padding-right: 0px;
     padding-top: 0px;  
-} */
+} 
 
-/* .carousel-item {
+.carousel-item {
     height: 500px;
-} */
 
-/* .carousel-item img {
+}
+.carousel-item img {
     position: absolute;
     min-height: 500px;
-} */
+}
