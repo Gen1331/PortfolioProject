@@ -7,8 +7,10 @@
     <meta  http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
     <link href="styles/myGeorgiaStyles.css" rel="stylesheet">
+    <link href="styles/tabs.css" rel="stylesheet">
     <title>Visit Georgia!</title>
 </head>
 
@@ -75,7 +77,7 @@
     </div>
 
     <header class="jumbotron">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row row-header justify-content-center">
                 <div class="col col-sm-10 d-flex justify-content-center">
                     <h1 id="title" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 48px"></h1>
@@ -124,6 +126,50 @@
             </div>            
         </div>
     </div>
+    <section id="tabs">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 ">
+                    <nav>
+                        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#about" role="tab" aria-controls="nav-home" aria-selected="true">About Georgia</a>
+                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#map" role="tab" aria-controls="nav-profile" aria-selected="false">Map</a>
+                            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#wheather" role="tab" aria-controls="nav-contact" aria-selected="false">Wheather</a>
+                            
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="nav-home-tab">
+                            A land of endless wonders, unspoilt by modern tourism and still retaining its authentic character – Georgia. Once experienced, it will stay with you forever. Exploring Georgia is a constant pleasure. For walkers and hikers the country is sheer heaven, while botanists and bird-watchers will be simply enthralled and archaeologists can’t decide which of the numerous ancient findings to visit first.With the towering <a style="color:red;" href="https://en.wikipedia.org/wiki/Caucasus">Caucasus Mountains</a> forming the border between Europe and Asia, Georgia has long been an important contact zone. In this mystical land you will be captivated by a thrilling blend of eastern enigma and western elegance. The traditions of the East and West meet in Georgia to form a culture unlike any other in the world. 
+                        </div>
+                        <div class="tab-pane fade" id="map" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3027483.4666511407!2d43.52049300000001!3d42.181802!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cd7e64f626b%3A0x61d084ede2576ea3!2sTbilisi%2C+Georgia!5e0!3m2!1sen!2sus!4v1545700826812" height="600" frameborder="0" style="border:2" allowfullscreen></iframe></p>
+                        </div>
+                        <div class="tab-pane fade" id="wheather" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                        </div>                       
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <div class="row">
+        <div class="wrap">  
+            <ul class="tabs group">
+                <li><a class="active" href="#/one">About Georgia</a></li>
+                <li><a href="#/two">Map</a></li>
+                <li><a href="#/three">Wheather</a></li>
+            </ul>            
+            <div id="tab-content">
+                <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="nav-home-tab">
+                    A land of endless wonders, unspoilt by modern tourism and still retaining its authentic character – Georgia. Once experienced, it will stay with you forever. Exploring Georgia is a constant pleasure. For walkers and hikers the country is sheer heaven, while botanists and bird-watchers will be simply enthralled and archaeologists can’t decide which of the numerous ancient findings to visit first.With the towering <a style="color:red;" href="https://en.wikipedia.org/wiki/Caucasus">Caucasus Mountains</a> forming the border between Europe and Asia, Georgia has long been an important contact zone. In this mystical land you will be captivated by a thrilling blend of eastern enigma and western elegance. The traditions of the East and West meet in Georgia to form a culture unlike any other in the world. 
+                </div>
+                <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="nav-home-tab"></div>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3027483.4666511407!2d43.52049300000001!3d42.181802!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cd7e64f626b%3A0x61d084ede2576ea3!2sTbilisi%2C+Georgia!5e0!3m2!1sen!2sus!4v1545700826812" height="600" frameborder="0" style="border:2" allowfullscreen></iframe></p>
+               
+            </div>            
+        </div>
+    </div>   -->
     <div class='row'>        
         <div class="col col-sm-6 embed-responsive embed-responsive-16by9"> 
             <iframe width="860" height="484" src="https://www.youtube.com/embed/oQea4Z6pcRc" 
@@ -179,8 +225,10 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./scripts/title.js"></script>
     <script src="./scripts/resize.js"></script>
+    <script src="./scripts/tabs.js"></script>
 </body>
 
 </html>
