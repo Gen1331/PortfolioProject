@@ -21,6 +21,7 @@ section .section-title {
     border-bottom: 4px solid !important;
     font-size: 25px;
     font-weight: bold;
+    
 }
 #tabs .nav-tabs .nav-link {
     border: 1px solid transparent;
@@ -28,12 +29,22 @@ section .section-title {
     border-top-right-radius: .25rem;
     color: rgb(100, 100, 100);
     font-size: 45px;
+    
 }
 
 .tab-pane {
     font-size: 35px;
     font-family: 'Linden Hill', serif;
 }
+
+div#about{
+    text-indent: 50px;
+}
+
+.col-xs-12 {
+    width:100%;    
+}
+
 
 /* .wrap {
     margin: 0 auto;

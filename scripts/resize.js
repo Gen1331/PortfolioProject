@@ -1,12 +1,10 @@
-(function($) {   
-    // $('#logo').css('width','355');
-    $('.navbar-nav li a').css('font-size',$(window).innerWidth()/55 + 'px');
+(function($) { 
+    $('.navbar-nav li a').css('font-size',$(window).innerWidth()/65 + 'px');
     $('.carousel').css('height', $(window).width()/1.4 + 'px');
-    $('.map').css('width', ($(window).width() - 50) + 'px');    
-    $(window).resize(function(){
-        // $('#logo').css('width',$(window).innerWidth()/5);
-        $('.navbar-nav li a').css('font-size',$(window).innerWidth()/55 + 'px');
+    $('.map').css('width', ($(window).width() - 20) + 'px');    
+    $(window).resize(function(){       
+        $('.navbar-nav li a').css('font-size',$(window).innerWidth()/65 + 'px');
         $('.carousel').css('height', $(window).width()/1.4 + 'px'); 
-        $('.map').css('width', ($(window).width() - 50) + 'px');        
+        $('.map').css('width', ($(window).width() - 20) + 'px');        
     }); 
 })(jQuery);

@@ -30,7 +30,9 @@
     padding: 0px 0px 0px 0px;
     margin: 0px auto;
     background: rgb(163, 163, 167);
-    color:  #080C49;
+    color:  #080C49; 
+    height: 105px; 
+    flex-wrap: wrap;  
 }
 
 address {
@@ -44,6 +46,10 @@ body {
     z-index: 0;
     background:  rgb(195, 200, 241);
     overflow-y: scroll;
+}
+
+.navbar{
+    overflow-y: hidden !important;
 }
 
 .navbar-dark {
@@ -125,5 +131,16 @@ p a:hover {
     border-bottom: 0;
     padding-bottom: .3em;
     text-decoration: none;
+}
+
+#time {
+    /* display: flex;
+    flex-wrap: wrap; */
+    align-content:flex-start;
+    width: 23%;
+}
+
+#time div a {
+    font-size: 20px;
 }
 
