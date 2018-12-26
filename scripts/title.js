@@ -42,5 +42,6 @@ $(document).ready(function(){
             id++;            
             $('#title').html("~Welcome to " + title[id-1] + "~"); 
         }                  
-    });    
+    });  
+    
 });
