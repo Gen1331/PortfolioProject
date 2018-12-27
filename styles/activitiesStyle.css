@@ -68,4 +68,7 @@ body {
 
 .carousel-caption {
     text-align: end;
+    bottom: 0;
+    right: 0;
+    
 }
