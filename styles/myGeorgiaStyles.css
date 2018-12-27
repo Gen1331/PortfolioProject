@@ -34,12 +34,6 @@
 
 }
 
-address {
-    font-size: 80%;
-    margin: 0px;
-    color: #0f0f0f;
-}
-
 body {
     padding: 60px 0px 0px 0px;
     z-index: 0;
@@ -53,12 +47,7 @@ body {
 
 .navbar-dark {
     background-color: #080C49;
-
-}
-
-.reserve-table {
-    padding: 0px 10px 0px 10px;
-    
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .tab-content {
@@ -73,7 +62,7 @@ body {
     padding-right: 0px;
     padding-top: 0px;
     width: 100%;     
-    opacity: 0.75;      
+    /* opacity: 0.75;       */
 }
 
 .img-fluid {
@@ -84,7 +73,7 @@ body {
 .carousel-item img {
     position: relative; 
     width: 100%;   
-    opacity: 0.5;
+    /* opacity: 0.5; */
 }
 
 span.carousel-control-prev-icon, 
