@@ -27,8 +27,9 @@
 }
 
 .jumbotron {
-    padding: 0px 0px 0px 0px;
+    padding: 20px 0px 20px 0px;
     margin: 0px auto;
+    height: 100%;
     background: rgb(163, 163, 167);
     color:  #080C49; 
 
@@ -128,7 +129,16 @@ p a:hover {
     width: 23%;
 }
 
-#time div a {
-    font-size: 20px;
+#time {
+    height: 85px;
 }
+.booked-clock-150x70-date, .booked-clock-150x70-city {
+    font-size: 13px;
+}
+
+#media{
+    margin-top: 50px;
+}
+
+
 
