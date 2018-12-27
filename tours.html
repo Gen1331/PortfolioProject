@@ -12,24 +12,27 @@
     </head>
     <body>
         <header class="container-fluid">
-                <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
-                        <a class="navbar-brand" href="#"><img src="images/FLAG.gif" height="30" width="41"></a>
-                        <div class="collapse navbar-collapse" id="Navbar">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item"><a class="nav-link" href="/index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="/activities.html"><span class="fa fa-bus fa-lg"></span> Activities </a></li>
-                                <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-map fa-lg"></span> Tours</a></li>
-                                <!-- <li class="nav-item"><a class="nav-link" href="/planvisit.html"><span class="fa fa-suitcase fa-lg"></span> Plan Your Visit!</a></li>    -->
-                            </ul>
-                            <span class="navbar-text">
-                                <a data-toggle="modal" data-target="#requestModal">
-                                    <span class="fa fa-sign-in"></span> Request More Information
-                                </a>
-                            </span>
-                        </div>
+            <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+                    <a class="navbar-brand" href="#"><img src="images/FLAG.gif" height="30" width="41"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="Navbar">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item"><a class="nav-link" href="/index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/activities.html"><span class="fa fa-bus fa-lg"></span> Activities </a></li>
+                            <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-map fa-lg"></span> Tours</a></li>
+                            <!-- <li class="nav-item"><a class="nav-link" href="/planvisit.html"><span class="fa fa-suitcase fa-lg"></span> Plan Your Visit!</a></li>    -->
+                        </ul>
+                        <span class="navbar-text">
+                            <a data-toggle="modal" data-target="#requestModal">
+                                <span class="fa fa-sign-in"></span> Request More Information
+                            </a>
+                        </span>
                     </div>
-                </nav>
-                <!-- MODAL: REQUEST MORE INFORMATION -->
+                </div>
+            </nav>
+            <!-- MODAL: REQUEST MORE INFORMATION -->
         <div id="requestModal" class="modal fade" role="dialog">
                 <div class="modal-dialog modal-lg" role="content">
                     <div class="modal-content">
@@ -58,7 +61,11 @@
             </div>
         </header>
         <main class="container-fluid">
-            
+            <div class="container" id="media">
+
+
+            </div>
+        </main>            
         <footer class="footer">
             <div class="container">
                 <div class="row col-sm-12 align-items-center">             
@@ -94,6 +101,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="scripts/navbar.js"></script>        
         <script src="scripts/resize.js"></script>
+        <script src="scripts/media.js"></script>
         
     </body>
 </html>
