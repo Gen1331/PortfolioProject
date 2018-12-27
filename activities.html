@@ -11,28 +11,58 @@
         <title>Visit Georgia!</title>
     </head>
     <body>
+        <h1>Here are some activities that you can do in Georgia:</h1>
+        <ul>
+            <li>ski down some of the most exhilierating slopes in the world -drop down menu- Ski Resorts</li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
         <header class="container-fluid">
-            <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
-                <div class="container">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <a class="navbar-brand" href="#"><img src="images/FLAG.gif" height="30" width="41"></a>
-                    <div class="collapse navbar-collapse" id="Navbar">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/tours.html"><span class="fa fa-map fa-lg"></span> Places To Go!</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-bus fa-lg"></span> Things to Do! </a></li>
-                            <li class="nav-item"><a class="nav-link" href="/planvisit.html"><span class="fa fa-suitcase fa-lg"></span> Plan Your Visit!</a></li>   
-                        </ul>
-                        <span class="navbar-text">
-                            <a data-toggle="modal" data-target="#loginModal">
-                                <span class="fa fa-sign-in"></span> Login
-                            </a>
-                        </span>
+                <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+                        <a class="navbar-brand" href="#"><img src="images/FLAG.gif" height="30" width="41"></a>
+                        <div class="collapse navbar-collapse" id="Navbar">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/activities.html"><span class="fa fa-bus fa-lg"></span> Activities </a></li>
+                                <li class="nav-item"><a class="nav-link" href="/tours.html"><span class="fa fa-map fa-lg"></span> Tours</a></li>
+                                <!-- <li class="nav-item"><a class="nav-link" href="/planvisit.html"><span class="fa fa-suitcase fa-lg"></span> Plan Your Visit!</a></li>    -->
+                            </ul>
+                            <span class="navbar-text">
+                                <a data-toggle="modal" data-target="#requestModal">
+                                    <span class="fa fa-sign-in"></span> Request More Information
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </nav>
+                <!-- MODAL: REQUEST MORE INFORMATION -->
+    <div id="requestModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Enter your email to recieve a free digital travel brochure!</h4>
+                        <button type="button" class="close" data-dismiss="modal">
+                            &times;
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                                </div>
+                                <div class="form-row col-8">
+                                    <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary btn-sm ml-1">Submit</button> 
+                                </div>       
+                            </div>
+                        </form>
                     </div>
                 </div>
-            </nav>
+            </div>
+        </div>
         </header>
         <main class="container-fluid">
             
