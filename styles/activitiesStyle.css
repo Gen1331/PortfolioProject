@@ -50,22 +50,41 @@ body {
 
 }
 
-.carousel {
-    background: #512DA8; 
+.carousel { 
     padding-right: 0px;  
 }
 
 .carousel-item {
-    height: 300px;
+    height: 500px;
 }
 
 .carousel-item img {
     position: absolute;
     top: 0;
     left: 0;
-    min-height: 300px;
+    min-height: 500px;
+    width: 100%;
 }
 
 .carousel-caption {
     text-align: end;
+    bottom: 200;
+    right: 0;
+    
+}
+.carouselSki-caption {
+    text-align: initial;
+    top: 0;
+    left: 0;
+}
+
+.heading {
+    margin: 0;
+    padding: 100px 0px 0px 10px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    color: #080C49; 
+
+
 }
