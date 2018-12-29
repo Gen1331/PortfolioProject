@@ -8,7 +8,9 @@
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
         <link href="styles/myGeorgiaStyles.css" rel="stylesheet">
-        <title>Visit Georgia!</title>
+        <link href="styles/modal.css" rel="stylesheet">
+        
+                
     </head>
     <body>
     <!-- NAV BAR -->
@@ -63,11 +65,23 @@
         </header>
         <main class="container-fluid">
             <div class="container" id="media">
-
-
             </div>
+
+        <!-- MODAL -->
+      
+            <div id="myModalContainer" class="container">
+                <div id="myModal" class="modal">
+                    <span id="myModalClose" class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+            </div> 
+        
         </main> 
-    <!-- FOOTER -->
+
+
+        
+    <!-- FOOTER --> 
         <footer class="footer">
             <div class="container">
                 <div class="row col-sm-12 align-items-center">             
@@ -100,10 +114,40 @@
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="scripts/navbar.js"></script>        
         <script src="scripts/resize.js"></script>
         <script src="scripts/media.js"></script>
+        <script>
+            function getModalImage(id){
+                // Get the modal
+                var modal = document.getElementById('myModal');
+
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementById(id);
+                var modalImg = document.getElementById("img01");
+                var captionText = document.getElementById("caption");
+                
+                img.addEventListener('click', function(event){
+                    console.log(event);
+                    // if(!event.detail || event.detail == 1)
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                });          
+             
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementById("myModalClose");
+                // console.log(span);
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() { 
+                    modal.style.display = "none";
+                }
+
+            }
+        </script>
+        
         
     </body>
 </html>
